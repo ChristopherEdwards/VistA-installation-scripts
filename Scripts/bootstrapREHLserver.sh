@@ -16,7 +16,7 @@
 # Install Git, so that we can bring up the rest of scripts
 #
 #-------------------------------------------------------------
-yum install git
+yum install -y git
 
 
 #-------------------------------------------------------------
@@ -24,7 +24,7 @@ yum install git
 # Create the user.
 #
 #-------------------------------------------------------------
-useradd $1
+useradd osehra
 
 
 #-------------------------------------------------------------
@@ -32,7 +32,7 @@ useradd $1
 # Change the user's password.
 #
 #-------------------------------------------------------------
-passwd $1
+echo -e "g00d0s3hrapa55w0rd" | passwd --stdin osehra
 
 
 #-------------------------------------------------------------
@@ -40,7 +40,8 @@ passwd $1
 # Add the user to the list of sudoers
 #
 #-------------------------------------------------------------
-echo "$1  ALL=(ALL)   ALL" > /etc/sudoers.d/customsudoers
+mkdir -p /etc/sudoers.d
+echo "osehra  ALL=(ALL)   ALL" > /etc/sudoers.d/customsudoers
 chmod 0440 /etc/sudoers.d/customsudoers
 
 
@@ -51,5 +52,5 @@ chmod 0440 /etc/sudoers.d/customsudoers
 #
 #---------------------------------------------------------------
 useradd cacheusr
-sudo usermod -a -G cacheusr $1
-groups $1
+sudo usermod -a -G cacheusr osehra
+groups osehra

@@ -32,7 +32,7 @@ ln -sf /usr/share/zoneinfo/US/Eastern /etc/localtime
 #  Get the time from a time server
 #
 #-------------------------------------------------------------
-rdate -s nist1-ny.ustiming.org
+rdate -s nist1-ny2.ustiming.org
 
 
 #-------------------------------------------------------------
@@ -40,5 +40,5 @@ rdate -s nist1-ny.ustiming.org
 #  Finally, reboot to get everything in order.
 #
 #-------------------------------------------------------------
-shutdown -r now
+#shutdown -r now
 

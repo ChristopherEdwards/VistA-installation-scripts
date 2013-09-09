@@ -1,4 +1,5 @@
 #!/bin/sh
+su osehra
 cd $HOME
 mkdir -p $HOME/local
 mkdir -p $HOME/cmake
@@ -11,3 +12,4 @@ cd $HOME/cmake/bin
 $HOME/cmake/src/cmake-2.8.10/configure --prefix=$HOME/local
 make -j4
 make install
+exit

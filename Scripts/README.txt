@@ -16,20 +16,20 @@ if using GTM:
 
 if using Cache:
 
-      1) Cache/configureCache.sh
-      2) Cache/createCacheUser.sh
+      1) Follow Cache/HowToInstallCache.txt
+      2) Cache/configureCache.sh
+      3) Cache/createCacheUser.sh
 
 continue for any case (GTM or Cache):
 
       1) installCMakeinUserAccount.sh
-      2) installVistAinUserAccount.sh
-      3) installVistAFOIARepository.sh
-      4) installOSEHRATesting.sh
-      5) installMUnit.sh
-      6) installBashConfiguration.sh
+      2) installVistAFOIARepository.sh
+      3) installOSEHRATesting.sh
+      4) installMUnit.sh
+      5) installBashConfiguration.sh
 
 Once all this environment is setup
-a Dashboar build can be triggered by calling:
+a Dashboard build can be triggered by calling:
 
          runDashboardBuildWithoutMUnit.sh
 

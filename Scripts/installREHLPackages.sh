@@ -13,7 +13,7 @@ yum update
 #  Install specific packages
 #
 #------------------------------
-yum install \
+yum install -y \
 libicu \
 libicu-devel \
 git \

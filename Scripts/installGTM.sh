@@ -2,19 +2,22 @@
 #
 #   This script must be run as root (or sudo)
 #
-cd $HOME
-mkdir -p $HOME/fis-gtm-installation
-mkdir -p $HOME/fis-gtm-installation/fis-gtm-V5.5-000
-cd $HOME/fis-gtm-installation
+
+#export INSTALL_DIR=$HOME
+export INSTALL_DIR=/home/osehra
+cd $INSTALL_DIR
+mkdir -p $INSTALL_DIR/fis-gtm-installation
+mkdir -p $INSTALL_DIR/fis-gtm-installation/fis-gtm-V5.5-000
+cd $INSTALL_DIR/fis-gtm-installation
 wget -q -N http://sourceforge.net/projects/fis-gtm/files/GT.M-amd64-Linux/V5.5-000/gtm_V55000_linux_x8664_pro.tar.gz
-cd $HOME/fis-gtm-installation/fis-gtm-V5.5-000
+cd $INSTALL_DIR/fis-gtm-installation/fis-gtm-V5.5-000
 tar -xzf ../gtm_V55000_linux_x8664_pro.tar.gz
 
 #
 # The following is the ./configure script from fis-gtm but modifed
 # to answer all the questions according to the default installation
 # that we want.
-# 
+#
 
 
 #################################################################

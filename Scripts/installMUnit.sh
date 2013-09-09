@@ -4,7 +4,7 @@
 #
 mkdir -p $HOME/OSEHRA/Dashboards
 cd $HOME/OSEHRA/Dashboards
-git clone git://github.com/OSEHR/M-Tools.git
+git clone http://github.com/OSEHRA-Sandbox/M-Tools.git
 cd M-Tools
 cd "Utilities XT_7.3_81 not yet released"
 pwd
