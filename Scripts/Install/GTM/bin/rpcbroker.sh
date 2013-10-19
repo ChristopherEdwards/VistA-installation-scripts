@@ -4,9 +4,9 @@
 #
 export HOME=/home/foia
 export REMOTE_HOST=`echo $REMOTE_HOST | sed 's/::ffff://'`
-source $HOME/OSEHRA/etc/env
+source $HOME/etc/env
 
-LOG=$HOME/logs/cprs.log
+LOG=$HOME/log/cprs.log
 
 echo "$$ Job begin `date`"                                      >>  ${LOG}
 echo "$$  ${gtm_dist}/mumps -run GTMLNX^XWBTCPM"                >>  ${LOG}
